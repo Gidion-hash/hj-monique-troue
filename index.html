@@ -172,6 +172,16 @@
       margin-right: auto;
     }
 
+    .time-block .sub {
+      margin: 0.15rem 0 0.2rem;
+      font-style: italic;
+      color: var(--ink-soft);
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    .sub-spacer { display: none; }
+    @media (min-width: 560px) { .sub-spacer { display: block; } }
+
     .times-rule {
       height: 1px;
       background: var(--line);
@@ -332,13 +342,14 @@
       <div class="times">
         <div class="time-block">
           <p class="label">Aankoms</p>
-          <p class="hint" style="margin:0.15rem 0 0;font-style:italic">vanaf</p>
+          <p class="sub">vanaf</p>
           <!-- Wysig die aankomstyd hieronder indien nodig -->
           <p class="time">15:30</p>
         </div>
         <hr class="times-rule" aria-hidden="true">
         <div class="time-block">
           <p class="label">Seremonie begin stiptelik</p>
+          <p class="sub sub-spacer" aria-hidden="true">&nbsp;</p>
           <!-- Wysig die seremonietyd hieronder indien nodig -->
           <p class="time">16:30</p>
         </div>
